@@ -5,6 +5,6 @@ iosv = driver('192.168.122.210', 'aldi', 'cisco')
 iosv.open()
 
 ios_output = iosv.get_bgp_neighbors()
-print(json.dumps(ios_output, indent=4))
+print(json.dumps(ios_output, sort_keys=True, indent=4))
 
 iosv.close()
